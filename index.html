@@ -595,44 +595,37 @@
     			    </div>
     				<!-- contact info item end -->
     			</div>
-    			<div class="row">
-    				<form class="contact-form padd-15">
-    					<div class="row">
-    						<div class="form-item col-6 padd-15">
-    							<div class="form-group">
-    								<input type="text" class="form-control" placeholder=Name*>
-    							</div>
-    						</div>
-    						 <div class="form-item col-6 padd-15">
-    							<div class="form-group">
-    								<input type="text" class="form-control" placeholder="Email*">
-    							</div>    
-    						 </div>
-    					</div>
-    					<div class="row">
-    						 <div class="form-item col-12 padd-15">
-    							<div class="form-group">
-    								<input type="text" class="form-control" placeholder="Subject*">
-    							</div>    
-    						 </div>    						
-    					</div>
-    					<div class="row">
-    						<div class="form-item col-12 padd-15">
-    							<div class="form-group">
-    								<textarea class="form-control" placeholder="Your Message...*"></textarea> 
-    							</div>    
-    						</div>    						
-    					</div> 
-    					<div class="row">
-    						<div class=" col-12 padd-15">
-    						  <button type="submit" class="btn">Send Message</button>
-    						</div>    						
-    					</div>    					  					
-    				</form>
-    			</div>
-    			<!-- contact form end -->
-    		</div>
-    	</section>		    	
+    			<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+  
+  <!-- REQUIRED: Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="c4c51dc1-3e17-44b5-adc8-6b3306b0521b">
+
+  <!-- Name -->
+  <div class="form-item col-6">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+
+  <!-- Email -->
+  <div class="form-item col-6">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+
+  <!-- Subject -->
+  <div class="form-item col-12">
+    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+  </div>
+
+  <!-- Message -->
+  <div class="form-item col-12">
+    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <div class="form-item col-12">
+    <button type="submit" class="btn">Send Message</button>
+  </div>
+</form>
+
     	<!-- contact section End -->
 
     </div>
